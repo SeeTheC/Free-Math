@@ -1,6 +1,13 @@
 # [Free Math](http://freemathapp.org)
- 
+
 Free Math is an open source offline React web application for managing digital math homework.
+
+**[Branch: Math-Editor]**
+
+I have modifed the Free Math code as the simple math-editor component. using this branch developer can easily add this math-editor components into there projects.
+
+**[Branch: Master]**
+ Master branch code same has authors code.
 
 [freemathapp.org](http://freemathapp.org)
 
