@@ -314,11 +314,8 @@ class TexButtons extends React.Component {
                         style={this.props.buttonGroup === BASIC ?
                                     { backgroundColor: "#052d66"} : {}}
                     onClick={function() {
-                                // window.ephemeralStore.dispatch(
-                                //     { type : SET_KEYBOARD_BUTTON_GROUP, [BUTTON_GROUP] : BASIC });
-                                alert("AA");
-                               
-                           
+                                window.ephemeralStore.dispatch(
+                                    { type : SET_KEYBOARD_BUTTON_GROUP, [BUTTON_GROUP] : BASIC });                                                                                          
                                 }}/>
                 <Button text="Geometry"
                         style={this.props.buttonGroup === GEOMETRY ?

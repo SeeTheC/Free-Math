@@ -24,7 +24,7 @@ var REDO = 'REDO';
 
 window.onload = function() {
    
-    alert("HELLO");
+    alert("math-editor");
     window.handleClientLoad();
     
     window.store = createStore(rootReducer);
