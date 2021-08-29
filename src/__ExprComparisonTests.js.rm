@@ -42,13 +42,17 @@ class ExprComparisonTests extends React.Component {
                    }.bind(this)}
                    />
         <MathInput
-                   buttonsVisible='focused'
-                   buttonSets={['trig', 'prealgebra', 'logarithms', 'calculus']}
-                   value={this.state.rightExpr}
-                   onChange={function(value) {
-                       this.setRightExpr(value);
-                   }.bind(this)}
-                   />
+                        buttonsVisible='focused'
+                        className="mathStepEditor"
+                        style={{overflow: 'auto', marginTop: '8px'}}
+                        buttonSets={['trig', 'prealgebra',
+                                     'logarithms', 'calculus']}
+                        buttonGroup={'BASIC','MATRIX', 'GEOMETRY', 'SET_THEORY', 'GREEK'}
+                        //stepIndex={stepIndex}
+                        ref={ (ref) => this.stepRef = ref }
+                       // problemIndex={problemIndex} value={step[CONTENT]}
+                        
+                    />
         </div>
         );
     }

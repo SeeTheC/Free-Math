@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import _ from 'underscore';
 import TeX from './TeX.js';
 import { symbolGroups } from './MathEditorHelpModal.js';
-import { default as Button, CloseButton } from './Button.js';
+import { default as Button } from './Button.js';
 import MathQuillStatic from './MathQuillStatic.js';
 var MathQuill = window.MathQuill;
 
@@ -314,8 +314,12 @@ class TexButtons extends React.Component {
                         style={this.props.buttonGroup === BASIC ?
                                     { backgroundColor: "#052d66"} : {}}
                     onClick={function() {
-                                window.ephemeralStore.dispatch(
-                                    { type : SET_KEYBOARD_BUTTON_GROUP, [BUTTON_GROUP] : BASIC });}}/>
+                                // window.ephemeralStore.dispatch(
+                                //     { type : SET_KEYBOARD_BUTTON_GROUP, [BUTTON_GROUP] : BASIC });
+                                alert("AA");
+                               
+                           
+                                }}/>
                 <Button text="Geometry"
                         style={this.props.buttonGroup === GEOMETRY ?
                                     { backgroundColor: "#052d66"} : {}}
